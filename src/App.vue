@@ -93,18 +93,18 @@ export default {
   text-decoration: none;
   font-weight: normal;
   padding: 10px 15px; /* 增加点击区域 */
-  transition: background-color 0.3s, color 0.3s;
 }
 
 /* 高亮激活的路由链接，符合 Element Plus 风格 */
 .router-link-exact-active {
   color: #409eff; /* 使用 Element Plus 的主题色（默认为 #409eff） */
   background-color: rgba(64, 158, 255, 0.1); /* 激活状态下有轻微的背景高亮，符合 Element Plus 风格 */
-  border-radius: 4px; /* 圆角边框，符合 Element Plus 的样式 */
+  border-radius: 2px; /* 圆角边框，符合 Element Plus 的样式 */
 }
 
 /* 黑暗模式开关的位置 */
 .el-switch {
+  padding: 0%;
   margin-left: auto; /* 将开关放到最右侧 */
 }
 </style>

@@ -27,7 +27,6 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    /* padding: 40px 20px; */
     height: 100vh; /* 使页面全屏居中 */
   }
   
@@ -36,7 +35,6 @@
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 20px;
-    color: var(--title-color); /* 适应黑暗和亮模式 */
   }
   
   /* 标语样式 */
@@ -52,7 +50,6 @@
     font-size: 18px;
     line-height: 1.6;
     max-width: 600px;
-    color: var(--description-color); /* 适应黑暗和亮模式 */
     margin-bottom: 20px;
   }
   
@@ -61,20 +58,7 @@
     font-size: 18px;
     line-height: 1.8;
     max-width: 700px;
-    color: var(--ai-description-color); /* 适应黑暗和亮模式 */
   }
   
-  /* 适应黑暗模式的样式 */
-  :root {
-    --title-color: #333;
-    --description-color: #666;
-    --ai-description-color: #444;
-  }
-  
-  .dark {
-    --title-color: #ffffff; /* 黑暗模式下标题为白色 */
-    --description-color: #aaaaaa; /* 黑暗模式下说明文字为浅灰色 */
-    --ai-description-color: #cccccc; /* 黑暗模式下 AI 说明文字为更浅的灰色 */
-  }
   </style>
     
