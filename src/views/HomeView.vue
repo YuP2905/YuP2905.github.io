@@ -188,7 +188,6 @@ export default {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  padding: 20px;
   position: relative;
   overflow: hidden;
   background-color: inherit;
@@ -201,8 +200,8 @@ export default {
 
 /* 头像样式 */
 .profile-avatar {
-  width: 160px !important;
-  height: 160px !important;
+  width: 150px !important;
+  height: 150px !important;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
@@ -214,12 +213,26 @@ export default {
   box-shadow: 0 15px 40px rgba(64, 158, 255, 0.5);
 }
 
-/* 姓名样式 */
+/* 名字样式 */
 .name {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: var(--text-color);
+  font-size: 3.5rem; /* 增加字体大小 */
+  font-weight: 700; /* 加粗字体 */
+  text-align: center; /* 居中对齐 */
+  margin-top: 5px;  /* 顶部间距 */
+  margin-bottom: 10px; /* 底部间距 */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* 增加轻微的文字阴影 */
+  position: relative; /* 为装饰定位 */
+}
+
+/* 名字下方的装饰线 */
+.name::after {
+  content: ""; /* 生成空内容 */
+  display: block; /* 转为块级元素 */
+  width: 100px; /* 线条宽度 */
+  height: 4px; /* 线条高度 */
+  background: linear-gradient(to right, #67c23a, #409eff); /* 渐变色装饰线 */
+  margin: 8px auto 0; /* 居中和间距调整 */
+  border-radius: 2px; /* 圆角边缘 */
 }
 
 /* 描述部分样式 */
@@ -249,15 +262,30 @@ export default {
 
 /* 技能部分 */
 .skills-section {
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
+/* 技能标题样式 */
 .section-title {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-  color: var(--text-color);
+  font-size: 1.8rem; /* 减小字体大小 */
+  font-weight: 600; /* 中等加粗 */
+  text-align: center; /* 居中对齐 */
+  margin-bottom: 10px; /* 减少与技能标签之间的间距 */
+  position: relative; /* 为装饰线定位 */
 }
+
+/* 在标题下方添加细线装饰 */
+.section-title::after {
+  content: ""; /* 生成空内容 */
+  display: block; /* 转为块级元素 */
+  width: 80px; /* 线条宽度 */
+  height: 3px; /* 线条高度 */
+  background: linear-gradient(to right, #67c23a, #409eff); /* 渐变色线条 */
+  margin: 8px auto 0; /* 上下间距自动调整 */
+  border-radius: 2px; /* 圆角边缘 */
+}
+
 
 .skill-tag {
   margin: 5px;
@@ -275,7 +303,7 @@ export default {
 
 /* 按钮部分：GitHub 和联系按钮的容器样式 */
 .footer-section {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .button-row {

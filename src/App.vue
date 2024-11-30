@@ -8,7 +8,9 @@
         <img src="@/assets/logo.jpg" alt="Logo" class="nav-logo" />
       </a>
       <router-link class="nav-link" to="/" exact>Home</router-link>
+      <router-link class="nav-link" to="/others" exact>About Me</router-link>
       <router-link class="nav-link" to="/floorplan" exact>FloorPlan</router-link>
+      
     </div>
     <!-- 右侧黑暗模式开关 -->
     <el-switch
@@ -68,7 +70,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 10px 10px;
     background-color: inherit;
     overflow-x: auto; /* 允许横向滚动 */
     white-space: nowrap; /* 防止导航项换行 */
@@ -98,7 +100,7 @@ export default {
     color: inherit; /* 保持文字颜色与父级一致 */
     text-decoration: none;
     font-weight: normal;
-    padding: 10px 15px; /* 增加点击区域 */
+    padding: 10px 10px; /* 增加点击区域 */
 }
 
 /* 高亮激活的路由链接，符合 Element Plus 风格 */
