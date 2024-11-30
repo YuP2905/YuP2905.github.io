@@ -26,16 +26,16 @@ setup() {
 <style scoped>
 /* 主容器样式 */
 .describe-container {
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-height: 80vh; /* 填满页面 */
-text-align: center; /* 文本居中 */
-padding: 20px; /* 增加间距 */
-background-color: var(--bg-color); /* 使用动态背景颜色 */
-color: var(--text-color); /* 使用动态文字颜色 */
-font-family: 'Arial', sans-serif; /* 字体样式 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center; /* 文本居中 */
+    padding: 20px; /* 增加间距 */
+    margin-top: 60px;
+    background-color: var(--bg-color); /* 使用动态背景颜色 */
+    color: var(--text-color); /* 使用动态文字颜色 */
+    font-family: 'Arial', sans-serif; /* 字体样式 */
 }
 
 /* 标题样式 */

@@ -37,7 +37,7 @@
     <section class="footer-section">
       <el-row justify="center" gutter="20" class="button-row">
         <!-- GitHub 按钮 -->
-        <el-col :span="8" class="button-wrapper">
+        <el-col :xl="8" :lg="8" :sm="8" :md="8" :xs="24" class="button-wrapper">
           <el-button type="primary" size="large" round @click="visitGitHub" class="github-button hover-effect">
             <img src="@/assets/github-mark-white.svg" alt="GitHub Icon" class="icon" />
             My GitHub
@@ -45,7 +45,7 @@
         </el-col>
 
         <!-- 联系我按钮 -->
-        <el-col :span="8" class="button-wrapper">
+        <el-col :xl="8" :lg="8" :sm="8" :md="8" :xs="24" class="button-wrapper">
           <el-popover
             placement="bottom"
             width="250"
@@ -65,7 +65,7 @@
         </el-col>
 
         <!-- Buy Me a Coffee 按钮 -->
-        <el-col :span="8" class="button-wrapper">
+        <el-col :xl="8" :lg="8" :sm="8" :md="8" :xs="24" class="button-wrapper">
           <el-button type="info" size="large" round @click="isDialogVisible = true" class="coffee-button hover-effect">
             <el-icon :size="20"><Coffee /></el-icon>
             Buy me a coffee
@@ -304,10 +304,15 @@ export default {
 /* 按钮部分：GitHub 和联系按钮的容器样式 */
 .footer-section {
   margin-top: 30px;
+  text-align: center; /* 确保内容居中 */
 }
 
 .button-row {
   width: 100%;
+}
+
+.button-wrapper {
+  margin-top: 5px;
 }
 
 /* 图标样式 */

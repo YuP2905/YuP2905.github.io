@@ -26,6 +26,8 @@
   <transition name="fade" mode="out-in">
     <router-view />
   </transition>
+
+  <el-backtop :right="40" :bottom="40" />
 </template>
 
 <script>
