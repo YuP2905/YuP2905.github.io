@@ -13,11 +13,6 @@ const routes = [
     name: "floor",
     component: () => import("../views/FloorPlan.vue")
   },
-  {
-    path: "/parking",
-    name: "park",
-    component: () => import("../views/Parking.vue")
-  }
 ]
 
 const router = createRouter({

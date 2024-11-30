@@ -22,5 +22,7 @@ module.exports = defineConfig({
       }),
     ],
   },
+
+  publicPath: '/'
   
 });
