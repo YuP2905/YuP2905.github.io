@@ -10,7 +10,7 @@
       <router-link class="nav-link" to="/" exact>Home</router-link>
       <router-link class="nav-link" to="/others" exact>About Me</router-link>
       <router-link class="nav-link" to="/floorplan" exact>FloorPlan</router-link>
-      
+
     </div>
     <!-- 右侧黑暗模式开关 -->
     <el-switch
@@ -21,7 +21,7 @@
       @change="toggleDarkMode"
     ></el-switch>
   </nav>
-  
+
   <!-- 添加 Transition 动画效果 -->
   <transition name="fade" mode="out-in">
     <router-view />
