@@ -1,6 +1,6 @@
 <template>
     <div class="about-page">
-        <h1 class="about-description">123</h1>
+        <h1 class="about-description">This developer is too lazy to write anything</h1>
     </div>
 </template>
 
