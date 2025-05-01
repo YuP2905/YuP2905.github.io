@@ -9,7 +9,7 @@ module.exports = defineConfig({
   devServer: {
     port: 8081,  // post
     proxy: {
-      
+
     }
   },
 
@@ -31,17 +31,6 @@ module.exports = defineConfig({
       return args;
     });
   },
+  publicPath: './'
 
-  pwa: {
-      iconPaths: {
-          favicon32: "favicon.ico",
-          favicon16: "favicon.ico",
-          appleTouchIcon: "favicon.ico",
-          maskIcon: "favicon.ico",
-          msTileImage: "favicon.ico"
-      }
-  },
-
-  publicPath: '/'
-  
 });

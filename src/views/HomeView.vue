@@ -181,6 +181,12 @@ export default {
 </script>
 
 <style scoped>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* 主容器：整体页面的布局设置，居中对齐 */
 .home-container {
   display: flex;
@@ -188,6 +194,7 @@ export default {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  height: 100%;
   position: relative;
   overflow: hidden;
   background-color: inherit;
@@ -315,11 +322,18 @@ export default {
   margin-top: 5px;
 }
 
+
+:deep(.el-button>span) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
 /* 图标样式 */
 .icon {
   width: 20px;
   height: 20px;
-  margin: 2%;
   vertical-align: middle;
   filter: brightness(0) invert(1);
 }

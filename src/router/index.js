@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from "vue-router"
+import { createRouter, createWebHashHistory } from "vue-router"
 import HomeView from "../views/HomeView.vue"
 
 // 页面和路由配置
@@ -9,11 +9,6 @@ const routes = [
     component: HomeView
   },
   {
-    path: "/floorplan",
-    name: "floor",
-    component: () => import("../views/FloorPlan.vue")
-  },
-  {
     path: "/others",
     name: "other",
     component: () => import("../views/Others.vue")
@@ -21,7 +16,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  history: createWebHashHistory(),
   routes
 })
 

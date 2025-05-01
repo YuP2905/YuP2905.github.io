@@ -9,7 +9,6 @@
       </a>
       <router-link class="nav-link" to="/" exact>Home</router-link>
       <router-link class="nav-link" to="/others" exact>About Me</router-link>
-      <router-link class="nav-link" to="/floorplan" exact>FloorPlan</router-link>
 
     </div>
     <!-- 右侧黑暗模式开关 -->
@@ -67,15 +66,27 @@ export default {
 </script>
 
 <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* 导航栏样式 */
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 10px;
-    background-color: inherit;
-    overflow-x: auto; /* 允许横向滚动 */
-    white-space: nowrap; /* 防止导航项换行 */
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: inherit;
+  overflow-x: auto; /* 允许横向滚动 */
+  white-space: nowrap; /* 防止导航项换行 */
+  z-index: 1000;
 }
 
 /* 隐藏滚动条但保持功能 */
@@ -101,7 +112,7 @@ export default {
     margin-right: 20px;
     color: inherit; /* 保持文字颜色与父级一致 */
     text-decoration: none;
-    font-weight: normal;
+    font-weight: bolder;
     padding: 10px 10px; /* 增加点击区域 */
 }
 
